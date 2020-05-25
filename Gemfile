@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.6.6'
 
+gem 'mini_racer', platforms: :ruby
 gem 'bootsnap', require: false
 gem 'devise'
 gem 'jbuilder', '~> 2.0'
