@@ -1,0 +1,21 @@
+.banner {
+  width: 100%;
+  background-image: linear-gradient(
+    to right, 
+    rgba($color-tertiary-dark, 0.8),
+    rgba($color-tertiary-dark, 0.8)), 
+  url(tigerbw.jpeg);
+  background-size: cover;
+  height: calc(100vh - 4rem);
+  // clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  // -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  background-position: center;
+  border-radius: 1rem;
+}
+
+.banner-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

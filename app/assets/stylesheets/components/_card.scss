@@ -1,0 +1,145 @@
+.card {
+  perspective: 150rem;
+  position: relative;
+  height: 50rem;
+  width: 30rem;
+  margin: 5px;
+
+  &__side {
+    transition: all .5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    height: 50rem;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+    &--front {
+      background-color: white;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(to right  bottom, $color-secondary-light, $color-tertiary-light);
+      }
+
+      &-2 {
+        background-image: linear-gradient(to right  bottom, $color-secondary-light, $color-tertiary-light);
+      }
+
+      &-3 {
+        background-image: linear-gradient(to right  bottom, $color-secondary-light, $color-tertiary-light);
+      }
+    }
+  }
+  
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  &__picture {
+    background-size: cover;
+    background-position: center;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+    &--rails {
+      background-image: linear-gradient(to right  bottom, $color-secondary-light, $color-tertiary-light), url("https://rubyonrails.org/images/rails-logo.svg");
+    }
+
+    &--react {
+      background-image: linear-gradient(to right  bottom, $color-secondary-light, $color-tertiary-light), url("https://miro.medium.com/max/2000/1*HSisLuifMO6KbLfPOKtLow.jpeg");
+    }
+
+    &--aws {
+      background-image: linear-gradient(to right  bottom, $color-secondary-light, $color-tertiary-light), url("https://lh3.googleusercontent.com/pw/ACtC-3fb9Fyi-Ct1Dlr0OAylwac5a4KOkTSgRf7FtIDHNxoM0d-vGa52qwApA47sVbt3e4hSxH5pRkTyBeiOncssqIuK6lCj-LeZcyJt-Q8n4LTbSBXYQ01GK0rGr8ce74Kls4FhcppgrFWc6NzLwd-Mgs2CCQ=w1854-h1532-no");
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(to right  bottom, rgba($color-secondary-light, .8), rgba($color-tertiary-light, .8));
+    }
+
+    &--2 {
+      background-image: linear-gradient(to right  bottom, rgba($color-primary-light, .8), rgba($color-primary-dark, .8));
+    }
+
+    &--3 {
+      background-image: linear-gradient(to right  bottom, rgba($color-tertiary-light, .8), rgba($color-tertiary-dark, .8));
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
+    }
+  }
+
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+  }
+
+  &__price-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+  
+}

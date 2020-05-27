@@ -1,1 +1,15 @@
-// Specific CSS for your home-page
+.product-section {
+  margin-top: 20px;
+  padding-top: 40px;
+  width: 100%;
+  background-color: $color-tertiary-light;
+  border-radius: 1rem;
+}
+
+.product-left {
+  margin-left: 20%;
+}
+
+.product-right {
+  margin-left: 80%;
+}

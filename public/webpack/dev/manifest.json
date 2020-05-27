@@ -10,25 +10,15 @@
         "/webpack/dev/js/application-29bae7ce00c2842b1760.js.map"
       ]
     },
-    "hello_react": {
-      "js": [
-        "/webpack/dev/js/hello_react-581c252aa9ac1aa10882.js"
-      ],
-      "js.map": [
-        "/webpack/dev/js/hello_react-581c252aa9ac1aa10882.js.map"
-      ]
-    },
     "react-bundle": {
       "js": [
-        "/webpack/dev/js/react-bundle-13b8dd825258ebcad497.js"
+        "/webpack/dev/js/react-bundle-8ceb7c8fbc6797e62332.js"
       ],
       "js.map": [
-        "/webpack/dev/js/react-bundle-13b8dd825258ebcad497.js.map"
+        "/webpack/dev/js/react-bundle-8ceb7c8fbc6797e62332.js.map"
       ]
     }
   },
-  "hello_react.js": "/webpack/dev/js/hello_react-581c252aa9ac1aa10882.js",
-  "hello_react.js.map": "/webpack/dev/js/hello_react-581c252aa9ac1aa10882.js.map",
-  "react-bundle.js": "/webpack/dev/js/react-bundle-13b8dd825258ebcad497.js",
-  "react-bundle.js.map": "/webpack/dev/js/react-bundle-13b8dd825258ebcad497.js.map"
+  "react-bundle.js": "/webpack/dev/js/react-bundle-8ceb7c8fbc6797e62332.js",
+  "react-bundle.js.map": "/webpack/dev/js/react-bundle-8ceb7c8fbc6797e62332.js.map"
 }
