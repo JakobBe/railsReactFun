@@ -1,8 +1,10 @@
 puts 'Start seeding'
 puts 'Deleting old data'
+ExerciseGroupLink.destroy_all
+ExerciseGroup.destroy_all
+Exercise.destroy_all
 puts 'Creating new seeds'
 
-['Legs', 'Upper Body', 'Abs', 'Core', 'Arms']
 legs = ExerciseGroup.create(name: 'Legs')
 upper_body = ExerciseGroup.create(name: 'Upper Body')
 abs = ExerciseGroup.create(name: 'Abs')
@@ -130,7 +132,7 @@ ExerciseGroupLink.create(exercise_group_id: abs.id, exercise_id: ht.id)
 sc = Exercise.create(name: 'Scissors')
 ExerciseGroupLink.create(exercise_group_id: abs.id, exercise_id: sc.id)
 
-rt = Exercise.create(name: 'Russian Twit')
+rt = Exercise.create(name: 'Russian Twist')
 ExerciseGroupLink.create(exercise_group_id: abs.id, exercise_id: rt.id)
 
 hh = Exercise.create(name: 'Hollow Hold')

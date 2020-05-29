@@ -1,0 +1,24 @@
+.setting-modal {
+  padding: 4rem;
+
+  &__groups-wrapper {
+    background-color: $color-tertiary-light;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__header {
+    
+  }
+
+  &__cycle-wrapper {
+    background-color: $color-tertiary-light;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
