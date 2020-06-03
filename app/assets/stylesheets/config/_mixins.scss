@@ -5,3 +5,14 @@
     clear: both;
   }
 }
+
+@mixin child-position {
+  @for $i from 1 through 20 {
+    &:nth-child(#{$i}) {
+      position: absolute;
+      // top: calc(4rem * #{$i});
+      left: calc(15rem * #{$i});
+      z-index: calc(10 - #{$i});
+    }
+  }
+}

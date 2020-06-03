@@ -9,29 +9,21 @@ const WorkoutSetCard = ({ workoutSet }) => {
   }
 
   return (
-    <div class="workout-set-card">
-      <div class="workout-set-card__side workout-set-card__side--front">
-        <div class={`workout-set-card__picture workout-set-card__picture--${picClass}`}>
-          &nbsp;
-              </div>
-        <h4 class="workout-set-card__heading">
-          <span class="workout-set-card__heading-span workout-set-card__heading-span--1">{workoutSet[0]}</span>
-        </h4>
-        <div class="workout-set-card__details">
-          {workoutSet[1].map(exercise => {
-            return (
-              <div class="workout-set-card__details-text">
-                {exercise}
-              </div>
-            );
-          })}
-        </div>
+    <div class="workout__sets-set-card">
+      <div class={`workout__sets-set-card__picture workout__sets-set-card__picture--${picClass}`}>
+        &nbsp;
       </div>
-      <div class="workout-set-card__side workout-set-card__side--back workout-set-card__side--back-1">
-        <div class="workout-set-card__cta">
-          Sign up in order to customize your workout and add new exersies.
-          <a href={`#`} class="btn btn--sing-up">Sign Up</a>
-        </div>
+      <h4 class="workout__sets-set-card__heading">
+        <span class="workout__sets-set-card__heading-span workout__sets-set-card__heading-span--1">{workoutSet[0]}</span>
+      </h4>
+      <div class="workout__sets-set-card__details">
+        {workoutSet[1].map(exercise => {
+          return (
+            <div class="workout__sets-set-card__details-text">
+              {exercise}
+            </div>
+          );
+        })}
       </div>
     </div>
   );

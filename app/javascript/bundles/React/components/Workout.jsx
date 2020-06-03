@@ -90,14 +90,16 @@ class Workout extends React.Component {
 
     return(
       <div className="workout">
+        <div className="workout__sets">
+          {workoutArray.map(workoutSet => {
+            return (
+              <WorkoutSetCard workoutSet={workoutSet}/>
+            );
+          })}
+        </div>
         <div className="workout-time heading-tertiary">
           Workout time: {workoutTime[1] / 60}min
         </div>
-        {workoutArray.map(workoutSet => {
-          return (
-            <WorkoutSetCard workoutSet={workoutSet}/>
-          );
-        })}
       </div>
     );
   }
@@ -122,11 +124,12 @@ class Workout extends React.Component {
         <div className="header__text-box">
           <h1 className="heading-primary">
             <span className="heading-primary--main">Tiger</span>
-            <span className="heading-primary--sub"></span>
           </h1>
-          {workout}
-          {buttons}
         </div> 
+        {workout}
+        <div className="header__buttons">
+          {buttons}
+        </div>
         <SettingModal
           isOpen={this.state.isSettingOpen}
           onRequestClose={this.onSettingClose}
